@@ -1,22 +1,7 @@
-%% ENGR 845 Mini Project Assignment: Human Activity Classification Using Smartphone Data 
-% The purpose of this assignment is for the students to gain hands-on experience 
-% with the concepts taught in the class including human data processing, feature 
-% engineering, pattern classification, and parameter tuning.
-% 
-% References: 
-%% 
-% # Canvas -> Mini Project -> Reference Materials -> Collect Accelerometer Data 
-% from Smartphone (For Use in Matlab)
-% # Canvas -> Mini Project -> Reference Materials -> Adding Machine Learning 
-% to Signal Processing Application
-% # Canvas -> Mini Project -> Reference Materials -> EMG PR code 2.0 
-% # Canvas -> Weekly Lecture Slides 
-%% 
-% Please read the instructions below and complete the required fields marked 
-% with an *. 
+Human Activity Classification Using Smartphone Data 
+
 %% Data Collection
-% In this assignment, 3-axis acceleration data from an iPhone 14 Pro iOS version 
-% 16.4.1 for *three* different classes of human activities are collected by myself. 
+% 3-axis acceleration data from an iPhone 14 Pro iOS version 16.4.1 for *three* different classes of human activities are collected by myself. 
 % These motions are :
 %% 
 % # Activity 1 - Walking
@@ -51,14 +36,14 @@
 % The dataset is located in the MobileSensorData folder. For each activity class, 
 % there are _*sitting.mat,walking.mat,jumping.mat*_ files stored in the folder.
 % 
-% In this assignment, we create two sub-folders _*MobileSensorData/Train*_ and 
+% We create two sub-folders _*MobileSensorData/Train*_ and 
 % _*MobileSensorData/Test*_ to partition the dataset into training and testing 
 % sets. Specifically, files with names _*Sit1.mat, Sit2.mat, Walk1.mat, Walk2.mat, 
 % Jump1.mat, Jump2.mat and so on*_ are stored in the train folder, while files 
 % with names _*sit1.mat, sit2.mat, walk1.mat, walk2.mat, jump1.mat, jump2.mat 
 % and so on*_ are stored in the test folder.
 % Raw Data at a glance
-% *Please write MATLAB code to plot some example trials for the activities
+
 
 w = load('Walk4.mat')
 
@@ -339,7 +324,7 @@ CL_data = table(features, labels);
 % 
 %% Classification - Train a Model
 % Now we can train a classifier model using the feature matrix generated in 
-% the previous step. In this assignment, we use the MATLAB built-in _*Classification 
+% the previous step. We use the MATLAB built-in _*Classification 
 % Learner*_ app to do pattern classification. 
 % 
 % You can launch the _*Classification Learner*_ app by running the code below 
